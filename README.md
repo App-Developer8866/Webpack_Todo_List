@@ -67,8 +67,8 @@ After you're finished please remove all the comments and instructions!
     Webpack
 
 
-## 🛠 Live Demo <a name="live-demo"></a>
-    Todo List App live [link](https://app-developer8866.github.io/todoapp.github.io/)
+## 🛠 Live Demo <a name="Coming soon"></a>
+    <!-- Todo List App live [link](https://app-developer8866.github.io/todoapp.github.io/) -->
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -82,7 +82,7 @@ After you're finished please remove all the comments and instructions!
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone https://github.com/App-Developer8866/todo_list_webpack.git
+- On the terminal run this command git clone https://github.com/App-Developer8866/Webpack_Todo_List.git
 
 - Go to the repository folder using command prompt cd Awesome-books.
 
@@ -109,7 +109,7 @@ Clone this repository to your desired folder:
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone https://github.com/App-Developer8866/todo_list_webpack.git
+- On the terminal run this command git clone https://github.com/App-Developer8866/Webpack_Todo_List.git
 
 - Go to the repository folder using command prompt cd Awesome-books.
 
@@ -136,7 +136,7 @@ Clone this repository to your desired folder:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/App-Developer8866/todo_list_webpack/issues).
+Feel free to check the [issues page](https://github.com/App-Developer8866/Webpack_Todo_List/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
