@@ -1,4 +1,4 @@
-export default function updateBookData(collectionData) {
+const updateBookData = (collectionData) => {
   localStorage.setItem('tasksList', JSON.stringify(collectionData));
   const tasksList = JSON.parse(localStorage.getItem('tasksList'));
 
@@ -8,4 +8,6 @@ export default function updateBookData(collectionData) {
   }
 
   return tasksList;
-}
+};
+
+export default updateBookData;

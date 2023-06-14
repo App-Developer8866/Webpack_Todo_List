@@ -1,7 +1,7 @@
 import updateBookData from './updateBookData.js';
 import displayLists from './displayLists.js';
 
-export default function clearList(taskList) {
+const clearList = (taskList) => {
   const filteredArray = taskList.filter((task) => task.completed !== false);
   const filteredArray2 = taskList.filter((task) => task.completed !== true);
 
@@ -19,4 +19,6 @@ export default function clearList(taskList) {
   }
 
   displayLists(taskList);
-}
+};
+
+export default clearList;

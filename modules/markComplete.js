@@ -1,6 +1,6 @@
 import updateStatus from './updateStatus.js';
 
-export default function markComplete(event, toDoList) {
+const markComplete = (event, toDoList) => {
   const checkbox = event.target;
 
   const parent = checkbox.parentElement;
@@ -9,4 +9,6 @@ export default function markComplete(event, toDoList) {
   label.classList.toggle('checked');
   const index = parent.parentElement.getAttribute('data-index');
   updateStatus(index, true, toDoList);
-}
+};
+
+export default markComplete;

@@ -1,5 +1,4 @@
 import './style.css';
-// import '@fortawesome/fontawesome-free/css/all.css';
 import addToList from '../modules/addToList.js';
 import clearList from '../modules/clearList.js';
 import refreshList from '../modules/refreshList.js';

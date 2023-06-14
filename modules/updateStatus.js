@@ -1,6 +1,6 @@
 import updateBookData from './updateBookData.js';
 
-export default function updateStatus(index, status, toDoList) {
+const updateStatus = (index, status, toDoList) => {
   const updatedTasks = toDoList.filter((tasks) => {
     if (tasks.index === parseInt(index, 10)) {
       tasks.completed = status;
@@ -10,4 +10,6 @@ export default function updateStatus(index, status, toDoList) {
   });
   toDoList = updatedTasks;
   updateBookData(toDoList);
-}
+};
+
+export default updateStatus;

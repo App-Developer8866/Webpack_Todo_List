@@ -3,7 +3,7 @@ import editList from './editList.js';
 import markComplete from './markComplete.js';
 import markUnComplete from './markUnComplete.js';
 
-export default function displayLists(taskList) {
+const displayLists = (taskList) => {
   let list = '';
   const toDoListsDiv = document.getElementById('to-do-lists');
   Object.values(taskList).forEach((task) => {
@@ -77,4 +77,6 @@ export default function displayLists(taskList) {
       }
     });
   });
-}
+};
+
+export default displayLists;

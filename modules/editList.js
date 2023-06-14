@@ -1,6 +1,6 @@
 import updateBookData from './updateBookData.js';
 
-export default function editList(index, value, toDoList) {
+const editList = (index, value, toDoList) => {
   const updatedTasks = toDoList.filter((tasks) => {
     if (tasks.index === parseInt(index, 10)) {
       tasks.value = value;
@@ -10,4 +10,6 @@ export default function editList(index, value, toDoList) {
   });
   toDoList = updatedTasks;
   updateBookData(toDoList);
-}
+};
+
+export default editList;

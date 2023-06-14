@@ -1,6 +1,6 @@
 import updateBookData from './updateBookData.js';
 
-export default function removeListitem(index, toDoList) {
+const removeListitem = (index, toDoList) => {
   toDoList = toDoList.filter((task) => task.index !== parseInt(index, 10));
 
   toDoList = toDoList.map((task, index) => {
@@ -9,4 +9,6 @@ export default function removeListitem(index, toDoList) {
   });
   updateBookData(toDoList);
   return toDoList;
-}
+};
+
+export default removeListitem;
