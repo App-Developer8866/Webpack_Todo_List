@@ -1,118 +1,183 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Lato', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  background-color: rgb(223, 218, 215);
-}
-
-li {
-  list-style: none;
+.heading {
+  text-align: center;
 }
 
 .container {
-  position: absolute;
-  left: 30%;
-  top: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
   width: 40%;
-  margin: auto;
+  box-shadow: 1px 1px 2px 2px #aeabab;
   background-color: #fff;
-  border-radius: 5px;
 }
 
-header {
+.head {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #ddd;
 }
 
-h2 {
-  font-size: 20px;
-  line-height: 1.8;
-}
-
-form {
-  display: flex;
-  align-items: center;
-  padding: 5px 15px;
-  justify-content: space-between;
-  width: 100%;
-  border-bottom: 1px solid gray;
-}
-
-form input {
-  border: 0 solid;
-  color: rgb(24, 22, 22);
-  width: 100%;
+.form-head {
+  border-bottom: 1px solid #ddd;
   height: 50px;
-  padding: 10px 15px;
 }
 
-button {
-  width: 100%;
-  border: none;
-  background: #e2ddddb8;
-  padding: 15px;
-  border-radius: 5px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-form button {
-  border: 0 solid;
-  border-radius: 5px;
-  width: auto;
-  color: rgb(24, 22, 22);
-  padding: 10px 15px;
-  margin: 0 10px;
-}
-
-form i {
-  transform: rotate(90deg);
-}
-
-.tasks li {
+.form {
   display: flex;
-  gap: 15px;
-  padding: 15px;
-  border-bottom: 1px solid gray;
+  height: 100%;
 }
 
-.checkTask {
+.head p {
+  flex: 9;
+  border: 0;
+  padding-left: 2%;
+}
+
+.addList {
+  flex: 9;
+  border: 0;
+  padding-left: 2%;
+  font-style: italic;
+}
+
+.addList:focus {
+  border-color: transparent;
+  outline: none;
+}
+
+.click-icon,
+.recycle_icon {
+  flex: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #ddd;
+  display: flex !important;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.checkbox-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checkbox-list li {
+  border-bottom: 1px solid #ddd;
+}
+
+.checkbox-list input[type="checkbox"] {
+  display: none;
+}
+
+.list-item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 95%;
 }
 
-.task {
+.list-text {
+  flex: 8.5;
+  border: 0;
+  height: 100%;
+  padding: 3% 3%;
+  font-size: 16px;
+  color: #000;
+}
+
+.list-text:focus {
+  border-color: transparent;
+  outline: none;
+}
+
+.checkbox-list label {
+  display: inline-block;
+  cursor: pointer;
+  flex: 0.5;
+  margin: auto 0;
+  padding-left: 2%;
+  position: relative;
+}
+
+.checkbox-list label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.list-icon {
+  flex: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #ddd;
+  display: flex !important;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.checkbox-list input[type="checkbox"]:checked + label::before {
+  background-color: transparent;
+  border: none;
+}
+
+.checkbox-list input[type="checkbox"]:checked + label::after {
+  content: "\f00c";
+  color: #2196f3;
+  font-family: "Font Awesome 5 Free", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 29%;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.display {
+  display: flex !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.footer {
+  background: #f6f6f6;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 95%;
+  height: 50px;
 }
 
-.task input {
+.clear-list {
+  appearance: none;
+  outline: none;
   border: none;
-  padding: 2px 5px;
+  background-color: transparent;
+  margin: auto;
+  display: block;
 }
 
-.checkTask input {
-  border: none;
-  padding: 2px 5px;
+.clear-list:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-::placeholder {
-  font-size: 18px;
-  padding-left: 15px;
+.checked {
+  display: inline-block;
+  cursor: pointer;
+  flex: 0.5;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 2%;
+  color: #2e8ae6;
 }
 
-span {
-  color: red;
+.underline {
+  color: rgba(0, 0, 0, 0.45);
+  text-decoration: line-through;
+}
+
+.editing {
+  background-color: #fffeca !important;
 }
