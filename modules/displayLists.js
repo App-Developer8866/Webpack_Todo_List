@@ -1,7 +1,6 @@
 import removeListitem from './removeListitem.js';
 import editList from './editList.js';
-import markComplete from './markComplete.js';
-import markUnComplete from './markUnComplete.js';
+import { markComplete, markUnComplete } from './markComplete.js';
 
 const displayLists = (taskList) => {
   let list = '';
