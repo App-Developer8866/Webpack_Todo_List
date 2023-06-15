@@ -55,7 +55,9 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🚀 Live Demo <a name="coming soon"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- Live Demo [Click here](https://app-developer8866.github.io/Webpack_Todo_List/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -81,8 +83,8 @@ Clone this repository to your desired folder:
 
 
 ```sh
-  cd awesome-book-new
-  git clone git@github.com:App-Developer8866/setup_webpack.git
+  cd Webpack_Todo_List
+  git clone git@github.com:App-Developer8866/Webpack_Todo_List.git
 ```
 
 ### Install
@@ -92,7 +94,7 @@ Install this project with:
 
 
 ```sh
-  cd setup_webpack
+  cd Webpack_Todo_List
 ```
 
 
