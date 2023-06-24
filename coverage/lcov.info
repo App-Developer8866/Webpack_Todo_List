@@ -1,5 +1,5 @@
 TN:
-SF:modules\addToList.js
+SF:modules/addToList.js
 FN:1,(anonymous_0)
 FNF:1
 FNH:1
@@ -13,7 +13,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:modules\clearList.js
+SF:modules/clearList.js
 FN:4,(anonymous_0)
 FNF:1
 FNH:1
@@ -34,7 +34,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:modules\displayLists.js
+SF:modules/displayLists.js
 FN:6,(anonymous_0)
 FN:9,(anonymous_1)
 FN:34,(anonymous_2)
@@ -116,7 +116,7 @@ BRF:10
 BRH:0
 end_of_record
 TN:
-SF:modules\editList.js
+SF:modules/editList.js
 FN:3,(anonymous_0)
 FN:4,(anonymous_1)
 FNF:2
@@ -139,7 +139,7 @@ BRF:2
 BRH:0
 end_of_record
 TN:
-SF:modules\markComplete.js
+SF:modules/markComplete.js
 FN:3,(anonymous_0)
 FN:14,(anonymous_1)
 FNF:2
@@ -168,7 +168,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:modules\removeListitem.js
+SF:modules/removeListitem.js
 FN:1,(anonymous_0)
 FNF:1
 FNH:1
@@ -189,7 +189,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:modules\updateBookData.js
+SF:modules/updateBookData.js
 FN:1,(anonymous_0)
 FNF:1
 FNH:0
@@ -209,7 +209,7 @@ BRF:2
 BRH:0
 end_of_record
 TN:
-SF:modules\updateStatus.js
+SF:modules/updateStatus.js
 FN:3,(anonymous_0)
 FN:4,(anonymous_1)
 FNF:2
