@@ -1,6 +1,7 @@
 import removeListitem from './removeListitem.js';
 import editList from './editList.js';
 import { markComplete, markUnComplete } from './markComplete.js';
+import updateBookData from './updateBookData.js';
 
 const displayLists = (taskList) => {
   let list = '';
@@ -48,7 +49,8 @@ const displayLists = (taskList) => {
       const { value } = event.target;
 
       if (value === '') {
-        removeListitem(index, taskList);
+        let listArr = removeListitem(index, taskList);
+        updateBookData(listArr);
       } else {
         editList(index, value, taskList);
       }
@@ -60,7 +62,8 @@ const displayLists = (taskList) => {
     removeTaskIcon.addEventListener('click', (event) => {
       const listItem = event.target.closest('li');
       const index = listItem.getAttribute('data-index');
-      removeListitem(index, taskList);
+      let listArr = removeListitem(index, taskList);
+      updateBookData(listArr);
       const toDoList = JSON.parse(localStorage.getItem('tasksList')) || [];
       displayLists(toDoList);
     });

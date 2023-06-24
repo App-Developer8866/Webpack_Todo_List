@@ -1,5 +1,6 @@
 import removeListitem from './removeListitem.js';
 import displayLists from './displayLists.js';
+import updateBookData from './updateBookData.js';
 
 const updateLists = (toDoList) => {
   displayLists(toDoList);
@@ -8,7 +9,8 @@ const updateLists = (toDoList) => {
   const handleRemoveTaskClick = (event) => {
     const listItem = event.target.closest('li');
     const index = listItem.getAttribute('data-index');
-    removeListitem(index, toDoList);
+    let listArr = removeListitem(index, taskList);
+    updateBookData(listArr);
   };
 
   removeTaskIcons.forEach((removeTaskIcon) => {

@@ -1,14 +1,14 @@
-import updateBookData from './updateBookData.js';
-
 const removeListitem = (index, toDoList) => {
-  toDoList = toDoList.filter((task) => task.index !== parseInt(index, 10));
-
-  toDoList = toDoList.map((task, index) => {
-    task.index = index + 1;
-    return task;
-  });
-  updateBookData(toDoList);
-  return toDoList;
+  let newArr = [];
+  for(let a of toDoList){
+    if(a.index !== parseInt(index)){
+      newArr.push(a)
+    }
+  }
+  for(let i=0; i<newArr.length; i++){
+    newArr[i].index = i;
+  }
+  return newArr;
 };
 
 export default removeListitem;
