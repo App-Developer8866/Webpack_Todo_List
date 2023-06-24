@@ -3,6 +3,7 @@ import addToList from '../modules/addToList.js';
 import clearList from '../modules/clearList.js';
 import refreshList from '../modules/refreshList.js';
 import displayLists from '../modules/displayLists.js';
+import updateBookData from '../modules/updateBookData.js';
 
 const taskList = JSON.parse(localStorage.getItem('tasksList')) || [];
 displayLists(taskList);
@@ -18,7 +19,9 @@ addListBtn.addEventListener('click', () => {
   childCount += 1;
   const refreshTaskList = JSON.parse(localStorage.getItem('tasksList')) || [];
   if (value !== '') {
-    addToList(value, false, childCount, refreshTaskList);
+    const listArr = addToList(value, false, childCount, refreshTaskList);
+    displayLists(listArr);
+    updateBookData(listArr);
   }
 });
 addListField.addEventListener('keydown', (event) => {
@@ -29,13 +32,17 @@ addListField.addEventListener('keydown', (event) => {
     const refreshTaskList = JSON.parse(localStorage.getItem('tasksList')) || [];
 
     if (value !== '') {
-      addToList(value, false, childCount, refreshTaskList);
+      const listArr = addToList(value, false, childCount, refreshTaskList);
+      displayLists(listArr);
+      updateBookData(listArr);
     }
   }
 });
 clearlist.addEventListener('click', () => {
   const refreshTaskList = JSON.parse(localStorage.getItem('tasksList')) || [];
-  clearList(refreshTaskList);
+  const listArr = clearList(refreshTaskList);
+  displayLists(listArr);
+  updateBookData(listArr);
 });
 recycle.addEventListener('click', () => {
   const refreshTaskList = JSON.parse(localStorage.getItem('tasksList')) || [];
