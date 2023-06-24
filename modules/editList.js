@@ -1,5 +1,3 @@
-import updateBookData from './updateBookData.js';
-
 const editList = (index, value, toDoList) => {
   const updatedTasks = toDoList.filter((tasks) => {
     if (tasks.index === parseInt(index, 10)) {
@@ -8,8 +6,7 @@ const editList = (index, value, toDoList) => {
     }
     return true;
   });
-  toDoList = updatedTasks;
-  updateBookData(toDoList);
+  return updatedTasks;
 };
 
 export default editList;

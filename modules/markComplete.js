@@ -1,4 +1,5 @@
 import updateStatus from './updateStatus.js';
+import updateBookData from './updateBookData.js';
 
 export const markComplete = (event, toDoList) => {
   const checkbox = event.target;
@@ -8,7 +9,8 @@ export const markComplete = (event, toDoList) => {
   const label = parent.querySelector('label');
   label.classList.toggle('checked');
   const index = parent.parentElement.getAttribute('data-index');
-  updateStatus(index, true, toDoList);
+  const listArr = updateStatus(index, true, toDoList);
+  updateBookData(listArr);
 };
 
 export const markUnComplete = (event, toDoList) => {
@@ -18,5 +20,6 @@ export const markUnComplete = (event, toDoList) => {
   const label = parent.querySelector('label');
   label.classList.toggle('checked');
   const index = parent.parentElement.getAttribute('data-index');
-  updateStatus(index, false, toDoList);
+  const listArr = updateStatus(index, false, toDoList);
+  updateBookData(listArr);
 };
