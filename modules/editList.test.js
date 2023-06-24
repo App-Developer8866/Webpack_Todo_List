@@ -7,8 +7,8 @@ describe('Todo List', () => {
       { value: 'Login page1 design task', completed: false, index: 1 },
     ];
     expect(editList(0, 'Login page0', listArr)).toEqual([
-        { value: 'Login page0', completed: false, index: 0 },
-        { value: 'Login page1 design task', completed: false, index: 1 }
+      { value: 'Login page0', completed: false, index: 0 },
+      { value: 'Login page1 design task', completed: false, index: 1 },
     ]);
   });
 });
