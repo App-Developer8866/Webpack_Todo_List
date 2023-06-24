@@ -52,7 +52,8 @@ const displayLists = (taskList) => {
         const listArr = removeListitem(parseInt(index, 10), taskList);
         updateBookData(listArr);
       } else {
-        editList(index, value, taskList);
+        const listArr = editList(index, value, taskList);
+        updateBookData(listArr);
       }
     });
   });
