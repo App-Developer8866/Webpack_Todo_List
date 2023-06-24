@@ -49,7 +49,7 @@ const displayLists = (taskList) => {
       const { value } = event.target;
 
       if (value === '') {
-        let listArr = removeListitem(index, taskList);
+        const listArr = removeListitem(parseInt(index, 10), taskList);
         updateBookData(listArr);
       } else {
         editList(index, value, taskList);
@@ -62,7 +62,7 @@ const displayLists = (taskList) => {
     removeTaskIcon.addEventListener('click', (event) => {
       const listItem = event.target.closest('li');
       const index = listItem.getAttribute('data-index');
-      let listArr = removeListitem(index, taskList);
+      const listArr = removeListitem(parseInt(index, 10), taskList);
       updateBookData(listArr);
       const toDoList = JSON.parse(localStorage.getItem('tasksList')) || [];
       displayLists(toDoList);

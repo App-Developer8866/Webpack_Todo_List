@@ -9,7 +9,7 @@ const updateLists = (toDoList) => {
   const handleRemoveTaskClick = (event) => {
     const listItem = event.target.closest('li');
     const index = listItem.getAttribute('data-index');
-    let listArr = removeListitem(index, taskList);
+    const listArr = removeListitem(parseInt(index, 10), toDoList);
     updateBookData(listArr);
   };
 
